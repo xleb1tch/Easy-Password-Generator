@@ -19,6 +19,8 @@ try:
     if length_for_pass >= 61:
     	os.system("cls")
     	sys.exit()
+    if length_for_pass <= 60:
+        os.system("cls")
 except ValueError:
     print("It's not a number")
     time.sleep(2)
